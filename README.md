@@ -1,2 +1,2 @@
-# unelmamail_api
-api documentation for unelmamail
+# API Docs for UnelmaMail
+api documentation for UnelmaMail
