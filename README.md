@@ -17,7 +17,7 @@ ENDPOINT: /api/v1/lists
 ```
 curl -X POST -H "accept:application/json" -G \
 https://www.core.unelmamail.com/api/v1/lists? \
--d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l \
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH69 \
 -d name=List+1 \
 -d from_email=admin@abccorp.org \
 -d from_name=ABC+Corp. \
@@ -40,7 +40,7 @@ verb: GET endpoint: /api/v1/lists
 ```
 curl -X GET -H "accept:application/json" -G \
 https://www.core.unelmamail.com/api/v1/lists? \
--d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH69
 ```
 
 ## CAMPAIGNS
