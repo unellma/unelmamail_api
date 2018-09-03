@@ -19,10 +19,10 @@ curl -X POST -H "accept:application/json" -G \
 https://www.core.unelmamail.com/api/v1/lists? \
 -d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH69 \
 -d name=List+1 \
--d from_email=admin@abccorp.org \
+-d from_email=support@umail.site \
 -d from_name=ABC+Corp. \
--d default_subject=Welcome+to+ABC+Corp. \
--d contact[company]=ABC+Corp. \
+-d default_subject=Welcome+to+Unelma+Platforms. \
+-d contact[company]=Unelma+Platforms. \
 -d contact[state]=Armagh \
 -d contact[address_1]=14+Tottenham+Court+Road+London+England \
 -d contact[address_2]=44-46+Morningside+Road+Edinburgh+Scotland+EH10+4BF \
