@@ -45,7 +45,54 @@ https://www.core.unelmamail.com/api/v1/lists? \
 
 ## CAMPAIGNS
 
+HTTP METHOD: GET
+ENDPOINT: /api/v1/campaigns
+
+Returns: List of all user's campaigns in json
+
+```
+curl -X GET -H "accept:application/json" -G \
+https://www.core.unelmamail.com/api/v1/campaigns? \
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l
+```
+
+```
+curl -X GET -H "accept:application/json" -G \
+https://www.core.unelmamail.com/api/v1/campaigns/{uid}? \
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l
+```
+
 ## SUBSCRIBERS
+
+HTTP METHOD: GET
+ENDPOINT: /api/v1/lists/{list_uid}/subscribers
+
+Function: Display list of subscribers, specific subscriber or find subscriber with email
+
+```
+curl -X GET -H "accept:application/json" -G \
+https://www.core.unelmamail.com/api/v1/lists/{list_uid}/subscribers? \
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l \
+-d per_page=20 \
+-d page=1
+```
+
+```
+curl -X GET -H "accept:application/json" -G \
+https://www.core.unelmamail.com/api/v1/lists/{list_uid}/subscribers/{uid}? \
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l
+```
 
 ## FILES
 
+HTTP METHOD: POST
+ENDPOINT: /api/v1/file/upload
+
+Returns Upload file(s) to customer's storage
+
+```
+curl -X POST -H "accept:application/json" -G \
+https://www.core.unelmamail.com/api/v1/file/upload? \
+-d api_token=LOcCqPk4wDcjxrRqWxUsJPW9xC5Htof1X8fwSCSHjKTaRGP1Pvd1JklGKH6l  \
+-d files='[{"url":"https://core.unelmamail.com/images/logo_big.png","subdirectory":"path/to/file"},{"url":"http://core.unelmamail.com/images/logo_big.png","subdirectory":"path/to/file2"}]'
+```
